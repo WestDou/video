@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+<mapper namespace="com.zc.mapper.VideosMapper"> 
+
+
+
+<select id="listAllVideo" resultType="VideosVO"> 
+
+select * from video_videos v
+left join video_users u
+on v.user_id=u.id
+where v.status = 1
+<if test="desc!= null" >
+and v.video_desc = #{desc}
+</if>
+
+
+</select> 
+
+
+</mapper>

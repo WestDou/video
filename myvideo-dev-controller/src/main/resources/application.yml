@@ -1,0 +1,25 @@
+server:
+  port: 9001
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/video-dev?useUnicode=true&characterEncoding=utf-8&useOldAliasMetadataBehavior=true
+    username: root
+    password: 216216
+  redis:
+    host: 47.100.52.42
+    password: zcmyvideo
+    port: 6379
+    pool:
+      max-active: 8
+      max-wait: -1
+      max-idle: 8
+      min-idle: 0
+    timeout: 0
+mybatis:
+  type-aliases-package: com.zc.domain
+  mapper-locations: classpath:com/zc/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  
+  
