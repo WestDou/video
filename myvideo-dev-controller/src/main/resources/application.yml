@@ -21,5 +21,6 @@ mybatis:
   mapper-locations: classpath:com/zc/mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
-  
+logging:
+  config: "classpath:logback.xml"
   
