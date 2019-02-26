@@ -12,7 +12,7 @@ import javax.persistence.Table;
 @Table(name = "video_users")
 public class UsersDO extends BaseDO {
 
-	private static final Long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
 	private String username;
 	private String password;

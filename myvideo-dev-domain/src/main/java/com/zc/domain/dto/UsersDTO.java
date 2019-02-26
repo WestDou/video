@@ -10,9 +10,7 @@ import javax.persistence.Table;
  */
 @Table(name = "video_users")
 public class UsersDTO extends BaseDTO {
-
-	private static final Long serialVersionUID = 1L;
-
+	private static final long serialVersionUID = 1L;
 	private String username;
 	private String password;
 	private String faceImage;

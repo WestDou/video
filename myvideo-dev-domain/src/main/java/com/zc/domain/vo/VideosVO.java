@@ -1,8 +1,6 @@
 package com.zc.domain.vo;
 
-import java.util.Date;
 
-import javax.persistence.Table;
 
 /**
  * @createAuthor zhangcheng

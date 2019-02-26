@@ -1,6 +1,5 @@
 package com.zc.domain.dto;
 
-import java.util.Date;
 
 import javax.persistence.Table;
 

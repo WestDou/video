@@ -1,7 +1,6 @@
 package com.zc.mapper;
 
 import com.zc.domain.po.BgmDO;
-import com.zc.domain.vo.BgmVO;
 
 import tk.mybatis.mapper.common.Mapper;
 

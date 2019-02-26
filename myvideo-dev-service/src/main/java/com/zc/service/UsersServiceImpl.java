@@ -9,7 +9,6 @@ import com.zc.domain.dto.UsersDTO;
 import com.zc.domain.po.UsersDO;
 import com.zc.mapper.UsersMapper;
 import com.zc.utils.MD5Util;
-import com.zc.utils.ObjUtil;
 
 import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.entity.Example.Criteria;
