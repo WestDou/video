@@ -2,7 +2,8 @@ package com.zc.controller;
 
 import java.util.UUID;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,7 +22,7 @@ import com.zc.service.UsersService;
  */
 @RestController
 public class RegistLoginController {
-
+	public static final Logger log = LoggerFactory.getLogger(RegistLoginController.class);
 	@Autowired
 	private UsersService usersService;
 
@@ -83,6 +84,7 @@ public class RegistLoginController {
 		String token = UUID.randomUUID().toString();
 		usersService.AddUserSession(usersVO2.getId().toString(), token);
 		usersVO2.setToken(token);
+		log.info("----登录成功----,用户信息：{}",users);
 		return ResultUtil.ok(usersVO2);
 	}
 
